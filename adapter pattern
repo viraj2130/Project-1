@@ -1,0 +1,39 @@
+The Adapter pattern enables a system to use classes whose interfaces don’t quite match its requirements
+. It is especially useful for off-the-shelf code, for toolkits, and for libraries. Many examples of the Adapter pattern involve
+input/output because that is one domain that is constantly changing. For example, programs written in the 1980s will have verydifferent user interface
+s from those written in the 2000s. Being able to adapt those parts of the system to new hardware facilities would be much more cost effective than rewriting them.
+
+ITarget
+The interface that the Client wants to use
+
+Adaptee
+An implementation that needs adapting
+
+Adapter
+The class that implements the ITarget interface in terms of the Adaptee
+
+Request
+An operation that the Client wants
+
+SpecificRequest
+The implementation of Request’s functionality in the Adapter
+
+
+Mac OS X
+ExecuteAltiVec(instruction);
+
+
+Windows
+ExecuteSEE(instruction);
+
+
+Adapter
+void ExecuteAltiVec(instruction) {
+  ExecuteSSE(ConvertToSSE(instruction));
+}
+void ExecuteSSE(instruction) {
+  Intel.ExecuteSSE(instruction);
+  
+  
+  
+}
