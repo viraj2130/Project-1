@@ -1,0 +1,6 @@
+Simple interfaces to complex subsystems abound in real life. They can be created to make frequent use of a system faster, or to differentiate between novices and power users.
+\A good illustration is Amazon.com’s 1-Click® system, which simplifies the process of ordering items for well-known customers
+. Normally, after selecting an item to purchase, an Amazon customer has to enter delivery and bank account details before the order is accepted.
+If these details are stored and the customer verifies her identity in some way, 1-Click takes that customer straight to the checkout. 
+The customer’s stored bank account details and selected delivery address are used for the purchase, thus considerably speeding up (and simplifying) the ordering process.
+Thus, the 1-Click option forms a façade to the fuller system underneath.
