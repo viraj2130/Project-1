@@ -1,0 +1,34 @@
+using System;  
+using System.Collections.Generic;  
+using System.Data;  
+using WindowsFormsApplication1.DAL;  
+namespace WindowsFormsApplication1.BLL  
+{  
+    public class PersonBLL  
+    {  
+        public DataTable GetPersons()  
+        {  
+            try  
+            {  
+                PersonDAL objdal = new PersonDAL();  
+                return objdal.Read();  
+            }  
+            catch  
+            {  
+                throw;  
+            }  
+        }  
+        public DataTable GetPersons(Int16 ID)  
+        {  
+            try  
+            {  
+                PersonDAL objdal = new PersonDAL();  
+                return objdal.Read(ID);  
+            }  
+            catch  
+            {  
+                throw;  
+            }  
+        }  
+    }  
+}
