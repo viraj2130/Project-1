@@ -1,0 +1,5 @@
+// Compile the library
+csc /t:library /out:FacadeLib.dll Facade-Library.cs
+
+// Compile the main program
+csc /r:FacadeLib.dll Facade-Main.cs
